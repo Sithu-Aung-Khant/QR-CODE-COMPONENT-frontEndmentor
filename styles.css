@@ -1,0 +1,26 @@
+/* Custom properties/variables  */
+
+:root {
+    --main-white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+/* Base Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* box-sizing and font sizing */
+
+@font-face {
+    font-family: Outfit;
+    src: url(fonts/Outfit/Outfit-VariableFont_wght.ttf);
+}
+html {
+    box-sizing: border-box;
+    font-family: Outfit;
+}
