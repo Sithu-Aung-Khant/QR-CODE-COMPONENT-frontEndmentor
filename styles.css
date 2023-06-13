@@ -1,4 +1,4 @@
-/* Custom properties/variables  */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
 :root {
     --main-white: hsl(0, 0%, 100%);
@@ -7,20 +7,69 @@
     --dark-blue: hsl(218, 44%, 22%);
 }
 
-/* Base Reset */
-
 * {
     margin: 0;
     padding: 0;
 }
 
-/* box-sizing and font sizing */
-
-@font-face {
-    font-family: Outfit;
-    src: url(fonts/Outfit/Outfit-VariableFont_wght.ttf);
-}
 html {
     box-sizing: border-box;
     font-family: Outfit;
 }
+
+body {
+    background-color: var(--light-gray);
+    font-size: 15px;
+
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5%;
+    margin-bottom: .5rem;
+}
+
+.card {
+    background-color: var(--main-white);
+    width: 20%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5% auto 2%;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5%;
+}
+
+h3 {
+	padding: 1rem;
+    color: hsl(218, 44%, 22%);
+    font-size: 125%;
+}
+
+p {
+	padding: .0rem 1rem 1rem;
+    font-size: 90%;
+    color: gray;
+}
+
+.attribution {
+    color: hsl(228, 45%, 44%);
+    text-align: center;
+    font-size: 80%;
+}
+
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 40%;
+    }
+    footer > div {
+        font-size: 30%;
+    }
+    p {
+        font-size: 20%;
+    }
+
+  }
